@@ -14,7 +14,7 @@
 		<th colspan=2>Index</th>
 		</tr>
 		<tr>
-		<td><a href="/inputForm.jsp">toInput</a></td>
+		<td><a href="/InputForm.jsp">toInput</a></td>
 		<td><a href="/output.message">toOutput</a></td>
 		</tr>
 		</table>
