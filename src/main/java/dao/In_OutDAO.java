@@ -34,7 +34,7 @@ public class In_OutDAO {
 	// 메세지 입력
 	public int insert(String writer, String contents) throws Exception{
 
-		String sql = "insert into messages values(messages_seq.nextval,?,?)";
+		String sql = "insert into messages values(messages_seq.nextval,?,?,sysdate)";
 
 		try(Connection con = this.getConnection();
 				PreparedStatement pstat = con.prepareStatement(sql);){
