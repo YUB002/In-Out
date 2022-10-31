@@ -26,7 +26,7 @@ public class In_OutController extends HttpServlet {
 			if(uri.equals("/input.message")) {
 
 				dao.insert(writer, message);
-				response.sendRedirect("index.html");
+				response.sendRedirect("index.jsp");
 
 			}else if(uri.equals("/output.message")){
 
