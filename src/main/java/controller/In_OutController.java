@@ -17,14 +17,17 @@ import dto.In_OutDTO;
 public class In_OutController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+	String uri=request.getRequestURI();
+		
+		System.out.println(uri);
 		String writer = request.getParameter("writer");
 		String message = request.getParameter("message");
-		String uri=request.getRequestURI();
+	
+		
 		try {
 			In_OutDAO dao = In_OutDAO.getInstance();
 			if(uri.equals("/input.message")) {
-
+				
 				dao.insert(writer, message);
 				response.sendRedirect("index.jsp");
 

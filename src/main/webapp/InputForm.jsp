@@ -10,19 +10,19 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
-	<form action="/input.messasge">
+	<form action="/input.message">
 		<tr>
 			<th>InputForm
 		</tr>
 		<tr>
-		<input type=text name="writer" placeholder="작성자를 입력해주세요."> 
+			<input type=text name="writer" placeholder="작성자를 입력해주세요.">
 		</tr>
 		<tr>
-		<input type=text name="message" placeholder="메세지를 입력해주세요."> 
+			<input type=text name="message" placeholder="메세지를 입력해주세요.">
 		</tr>
 		<tr>
-		<td><button>보내기</button>
-					<a href="index.jsp"><button type=button>나가기</button></a>
+			<td><button>보내기</button> <a href="index.jsp"><button
+						type=button>나가기</button></a>
 		</tr>
 	</form>
 
