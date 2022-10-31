@@ -37,6 +37,8 @@ public class In_OutController extends HttpServlet {
 					}
 				}
 				System.out.println("출력완료");
+				request.setAttribute("list", list);
+				request.getRequestDispatcher("/OutputForm.jsp").forward(request, response);
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
